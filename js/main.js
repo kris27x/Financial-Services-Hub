@@ -5,9 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuToggler = document.getElementById('menuToggler');
   const menu = document.getElementById('menu');
 
-  menuToggler.addEventListener('click', () => {
-      menu.classList.toggle('open');
-  });
+  if (menuToggler && menu) {
+      menuToggler.addEventListener('click', () => {
+          menu.classList.toggle('open');
+      });
+  } else {
+      console.error("Menu toggler or menu element not found");
+  }
 
   /**
    * Create and style the 'Back to Top' button.
@@ -26,6 +30,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /**
    * Debounce function to limit the rate of execution for the scroll event handler.
+   * @param {Function} func - The function to debounce.
+   * @param {number} wait - The number of milliseconds to wait.
+   * @returns {Function} - The debounced function.
    */
   const debounce = (func, wait) => {
       let timeout;
@@ -39,14 +46,14 @@ document.addEventListener('DOMContentLoaded', () => {
    * Show or hide the 'Back to Top' button based on the scroll position.
    * Uses debounce for better performance.
    */
-  const handleScroll = () => {
+  const handleScroll = debounce(() => {
       const scrollY = window.scrollY;
       requestAnimationFrame(() => {
           backToTopBtn.style.display = scrollY > 300 ? 'block' : 'none';
       });
-  };
+  }, 50);
 
-  window.addEventListener('scroll', debounce(handleScroll, 50));
+  window.addEventListener('scroll', handleScroll);
 
   /**
    * Smoothly scroll the window to the top when the 'Back to Top' button is clicked.
