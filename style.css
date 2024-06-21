@@ -1,4 +1,4 @@
-/* General */
+/* General Styles */
 body {
   font-family: 'Arial', sans-serif;
   line-height: 1.6;
@@ -24,7 +24,7 @@ img {
   height: auto;
 }
 
-/* Navigation */
+/* Navigation Styles */
 #menuToggler {
   cursor: pointer;
   font-size: 24px;
@@ -53,7 +53,7 @@ nav a:hover {
   background-color: #555;
 }
 
-/* Sections */
+/* Main Content Styles */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -67,7 +67,7 @@ section {
   width: 100%;
 }
 
-/* Services page */
+/* Services Page Styles */
 #services-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -139,6 +139,7 @@ section {
     max-width: 100%;
   }
 }
+
 main section {
   margin-bottom: 30px;
 }
@@ -177,7 +178,7 @@ main section a:hover {
   background-color: #333;
 }
 
-/* Contact page */
+/* Contact Page Styles */
 #contact-page {
   max-width: 1200px;
   margin: 0 auto;
@@ -210,6 +211,7 @@ main section a:hover {
   font-weight: 700;
   color: #3a3a3a;
 }
+
 #contact-page #contact-section1 {
   background-color: #597850;
   padding: 2em;
@@ -229,7 +231,7 @@ main section a:hover {
   color: #fff;
 }
 
-/* About page */
+/* About Page Styles */
 #about-page section {
   margin: 2em 0;
   padding: 2em;
@@ -315,8 +317,7 @@ main section a:hover {
   font-weight: bold;
 }
 
-
-/* Main header */
+/* Main Header Styles */
 #main {
   background-image: url('main-background.jpg');
   background-position: center;
@@ -351,6 +352,7 @@ main section a:hover {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+/* About and Services Sections */
 #about-services {
   display: flex;
   justify-content: space-between;
@@ -402,6 +404,7 @@ main section a:hover {
   background-color: #1c2938;
 }
 
+/* Investment Strategies Section */
 #investment-strategies {
   padding-top: 1em;
   background-color: #f8cda8;
@@ -417,7 +420,6 @@ main section a:hover {
   display: inline-block;
   padding-bottom: 10px;
 }
-
 
 .strategy {
   display: flex;
@@ -501,6 +503,7 @@ main section a:hover {
   animation-delay: 22.5s;
 }
 
+/* Market Analysis Section */
 #market-analysis {
   background-color: #f3f3f3;
   padding: 2em;
@@ -548,6 +551,7 @@ main section a:hover {
   background-color: #1c2938;
 }
 
+/* Responsive Navigation */
 @media screen and (min-width: 457px) {
   body {
     font-size: 1.2em;
@@ -594,6 +598,7 @@ main section a:hover {
     background-position: 0% 50%;
   }
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -604,6 +609,7 @@ main section a:hover {
     transform: translateY(0);
   }
 }
+
 @keyframes slideIn {
   0% {
     opacity: 0;
@@ -614,6 +620,7 @@ main section a:hover {
     transform: translateY(0);
   }
 }
+
 @keyframes slideShow {
   0%, 14.29% {
     opacity: 1;
@@ -622,6 +629,8 @@ main section a:hover {
     opacity: 0;
   }
 }
+
+/* Back to Top Button */
 .back-to-top {
   background-color: #333;
   border: none;
