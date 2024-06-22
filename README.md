@@ -5,7 +5,10 @@ The website consists of four main pages: Home, About, Services, and Contact. The
 
 ****SAMPLE SCREENSHOTS****
 
+
 ![Home Page sample screenshot](https://github.com/kris27x/Financial-Services-Hub/blob/main/images/h1h1cc.png)
+
+
 
 ![About Page sample screenshot](https://github.com/kris27x/Financial-Services-Hub/blob/main/images/h1h1bb.png)
 
